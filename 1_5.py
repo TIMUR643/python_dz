@@ -6,7 +6,7 @@ if profit > costs:
     print(profitability)
     workers = int(input("Введите количество сотрудников фирмы "))
     profit1 = profit / workers
-    print("прибыль в расчете на одного сотрудника сотавила")
+    print("прибыль в расчете на одного сотрудника соcтавила")
     print(profit1)
 elif profit == costs:
     print("Фирма работает в ноль")
