@@ -4,7 +4,9 @@ days = 1
 if a > b:
     print(days)
 else:
- while a < b:
+    while a < b:
         a = a + 0.1 * a
         days += 1
-        print(days)
+
+    print(days)
+    
