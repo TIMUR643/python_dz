@@ -1,5 +1,9 @@
-def int_func (*args):
-    word = input("Введите слово ")
-    print(word.title())
-    return
-int_func()
+
+def div(s):
+    return ' '.join(w[:1].upper() + w[1:] for w in s.split(' '))
+
+source = input('Ваше слово: ').split()
+res = []
+for s in source:
+    res.append(div(s))
+print(' '.join(res))
