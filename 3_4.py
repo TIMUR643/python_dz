@@ -1,12 +1,15 @@
 def power(a, n):
     res = 1
-    if n >= 0:
-        return print('ошибка')
+    if isinstance(a, float) and a >= 0:
+        #print("ok")
+        if isinstance(n, int) and n <= 0:
+            for i in range(abs(n)):
+                res *= a
+
+            return print(1 / res)
+        else:
+            return print("error")
     else:
-        for i in range(abs(n)):
-            res *= a
+        return print("error")
 
-        return 1 / res
-
-
-print(power(float(input("Первое значение - ")), int(input("Второе значение - "))))
+power(float(input("Первое значение - ")), int(input("Второе значение - ")))
