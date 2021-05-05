@@ -1,9 +1,11 @@
+def int_func(word):
+    print(word[0:1].upper() + word[1:len(word)])
+    return
 
-def div(s):
-    return ' '.join(w[:1].upper() + w[1:] for w in s.split(' '))
+def int_multi_func(text):
+    words= text.split()
+    for i in words:
+        int_func(i)
 
-source = input('Ваше слово: ').split()
-res = []
-for s in source:
-    res.append(div(s))
-print(' '.join(res))
+int_func(input("Введите слово: "))
+int_multi_func(input("Введите текст разделенный пробелами"))
