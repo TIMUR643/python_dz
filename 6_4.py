@@ -13,18 +13,18 @@ class Car:
         return f'{self.name} стоит.'
 
     def turn(self, direction):
-        return f' {self.name} повернул на  {direction}'
+        return f' {self.name} повернул на{direction}.'
 
     def show_speed(self):
-        return f'Ваша скорость: {self.speed}'
+        return f'Ваша скорость: {self.speed}.'
 
 
 class TownCar(Car):
     def show_speed(self):
         if self.speed > 60:
-            return f'Сбавьте скорость'
+            return f'Сбавьте скорость!'
         else:
-            return f'Скорость {self.name}  разрешенная'
+            return f'Скорость {self.name}  разрешенная.'
 
 class SportCar(Car):
     pass
@@ -33,9 +33,9 @@ class SportCar(Car):
 class WorkCar(Car):
     def show_speed(self):
         if self.speed > 40:
-            return f'Сбавьте скорость'
+            return f'Сбавьте скорость!'
         else:
-            return f'Скоость {self.name} разрешенная'
+            return f'Скоость {self.name} разрешенная.'
 
 
 class PoliceCar(Car):
