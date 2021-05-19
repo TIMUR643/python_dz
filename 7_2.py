@@ -32,6 +32,6 @@ class Costume(Clothes):
 
 coat = Coat(100)
 costume = Costume(46)
-print(coat.consumption)
+print(coat.consumption())
 print(costume.consumption())
 print(coat.abstract())
