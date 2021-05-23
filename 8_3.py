@@ -8,7 +8,7 @@ class Error:
             try:
                 val = int(input('Введите значения и нажимайте Enter - '))
                 self.my_list.append(val)
-                print(f'Текущий список - {self.my_list} \n ')
+                #print(f'Текущий список - {self.my_list} \n ')
             except:
                 print(f"Недопустимое значение - строка и булево")
                 y_or_n = input(f'Попробовать еще раз? Y/N ')
@@ -17,6 +17,7 @@ class Error:
                     print(try_except.my_input())
                 else:
                     return f'Вы вышли'
+                    print(f'Cписок - {self.my_list} \n ')
 
 try_except = Error(1)
 print(try_except.my_input())
